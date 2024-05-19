@@ -1,0 +1,293 @@
+{
+	"folders": [
+	],
+	"settings": {
+		"bugmark.bookmarks": {
+			"Inductor": {
+				"AOTAutograd": {
+					"functional": {
+						"functional_call": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/traced_function_transforms.py",
+							"lineno": 679,
+							"content": "                out = mod(*args[params_len:], **kwargs)",
+							"deleted": false
+						},
+						"maybe_handle_decomp": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/fx/experimental/proxy_tensor.py",
+							"lineno": 1106,
+							"content": "            return CURRENT_DECOMPOSITION_TABLE[op](*args, **kwargs)",
+							"deleted": false
+						},
+						"torch_dispatch": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_subclasses/functional_tensor.py",
+							"lineno": 282,
+							"content": "        def _can_decompose(func):",
+							"deleted": false
+						}
+					},
+					"grad": {
+						"aot_dispatch_autograd_graph": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/dispatch_and_compile_graph.py",
+							"lineno": 150,
+							"content": "    joint_fn_to_trace = create_joint(fn_prepared_for_autograd, aot_config=aot_config)",
+							"deleted": false
+						},
+						"aot_dispatch_base_graph": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/dispatch_and_compile_graph.py",
+							"lineno": 89,
+							"content": "    fw_module = _create_graph(",
+							"deleted": false
+						},
+						"CompiledFunction": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/jit_compile_runtime_wrappers.py",
+							"lineno": 480,
+							"content": "            args = deduped_flat_tensor_args",
+							"deleted": false
+						},
+						"min_cut_rematerialization": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_functorch/partitioners.py",
+							"lineno": 671,
+							"content": "    joint_module.graph.eliminate_dead_code()",
+							"deleted": false
+						}
+					},
+					"pass": {
+						"apply": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/pattern_matcher.py",
+							"lineno": 1240,
+							"content": "        count = 0",
+							"deleted": false
+						},
+						"joint": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/fx_passes/joint_graph.py",
+							"lineno": 294,
+							"content": "        count += replace_random_passes(graph)",
+							"deleted": false
+						},
+						"match": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/pattern_matcher.py",
+							"lineno": 217,
+							"content": "            return MatchContext([self], graph=node.graph).match(self, node)",
+							"deleted": false
+						},
+						"post_grad": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/fx_passes/post_grad.py",
+							"lineno": 89,
+							"content": "        remove_noop_ops(gm.graph)",
+							"deleted": false
+						},
+						"pre_grad": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/fx_passes/pre_grad.py",
+							"lineno": 121,
+							"content": "        if config.is_predispatch:",
+							"deleted": false
+						}
+					}
+				},
+				"Codegen": {
+					"Callable": {
+						"codegen_body": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/codegen/triton.py",
+							"lineno": 2474,
+							"content": "        if self.inside_reduction and self.range_trees[-1].is_loop:",
+							"deleted": false
+						},
+						"init": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/codegen/wrapper.py",
+							"lineno": 473,
+							"content": "        self.header.splice(",
+							"deleted": false
+						},
+						"kernel_call": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/codegen/wrapper.py",
+							"lineno": 1274,
+							"content": "        if cuda:",
+							"deleted": false
+						}
+					},
+					"IndentedBuffer": {
+						"writeline": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/utils.py",
+							"lineno": 851,
+							"content": "        if isinstance(line, LineContext):",
+							"deleted": false
+						}
+					},
+					"LoopBodyBlock": {
+						"run": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/ir.py",
+							"lineno": 7271,
+							"content": "        return InterpreterShim(graph, submodules).run(V.get_ops_handler())",
+							"deleted": false
+						},
+						"trace": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/ir.py",
+							"lineno": 7264,
+							"content": "            ops.output(fn(*args))",
+							"deleted": false
+						}
+					}
+				},
+				"IR": {
+					"Interpreter": {
+						"call_method": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/fx/interpreter.py",
+							"lineno": 295,
+							"content": "        return getattr(self_obj, target)(*args_tail, **kwargs)",
+							"deleted": false
+						},
+						"call_module": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/fx/interpreter.py",
+							"lineno": 318,
+							"content": "        return submod(*args, **kwargs)",
+							"deleted": false
+						},
+						"run": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/fx/interpreter.py",
+							"lineno": 129,
+							"content": "        self.args_iter : Iterator[Any] = iter(args)",
+							"deleted": false
+						},
+						"run_node": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/fx/interpreter.py",
+							"lineno": 201,
+							"content": "            return getattr(self, n.op)(n.target, args, kwargs)",
+							"deleted": false
+						}
+					},
+					"GraphLowering": {
+						"call_function": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/graph.py",
+							"lineno": 815,
+							"content": "            out = lowerings[target](*args, **kwargs)",
+							"deleted": false
+						},
+						"decomp_fn": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/lowering.py",
+							"lineno": 295,
+							"content": "        out = decomp_fn(*args, **kwargs)",
+							"deleted": false
+						},
+						"pattern": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/graph.py",
+							"lineno": 945,
+							"content": "                result = self.call_function(n.target, args, kwargs)",
+							"deleted": false
+						},
+						"placeholder": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/graph.py",
+							"lineno": 721,
+							"content": "        example = super().placeholder(target, args, kwargs)",
+							"deleted": false
+						},
+						"simplify_index": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/codegen/triton.py",
+							"lineno": 1316,
+							"content": "            index = V.graph.sizevars.simplify_with_ranges(index, self.var_ranges())",
+							"deleted": false
+						}
+					},
+					"Template": {
+						"mm": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/kernel/mm.py",
+							"lineno": 157,
+							"content": "    return autotune_select_algorithm(\"mm\", choices, [mat1, mat2], layout)",
+							"deleted": false
+						},
+						"store_output": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/select_algorithm.py",
+							"lineno": 273,
+							"content": "        assert self.template_mask is None",
+							"deleted": false
+						}
+					},
+					"PatternMatch": {
+						"mm_plus_mm": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/fx_passes/post_grad.py",
+							"lineno": 203,
+							"content": "    return inductor.kernel.mm_plus_mm.tuned_mm_plus_mm(mat1, mat2, mat3, mat4)",
+							"deleted": false
+						}
+					},
+					"InnerFn": {
+						"buffer": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/ir.py",
+							"lineno": 2889,
+							"content": "            indexer = self.layout.make_indexer()",
+							"deleted": false
+						},
+						"pointwise": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/lowering.py",
+							"lineno": 430,
+							"content": "                return fn(*[load(index) for load in loaders])",
+							"deleted": false
+						}
+					}
+				},
+				"Scheduler": {
+					"Fusion": {
+						"can_fuse": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/scheduler.py",
+							"lineno": 1022,
+							"content": "        why = WhyNoFuse(producer, consumer)",
+							"deleted": false
+						},
+						"check_all_pairs": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/scheduler.py",
+							"lineno": 1854,
+							"content": "                    key = (node1, node2)",
+							"deleted": false
+						}
+					},
+					"init": {
+						"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/scheduler.py",
+						"lineno": 1297,
+						"content": "        self.compute_dependencies()",
+						"deleted": false
+					},
+					"Triton": {
+						"cse": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/codegen/common.py",
+							"lineno": 1209,
+							"content": "        var = self.cache.get(cache_key, None)",
+							"deleted": false
+						},
+						"load": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/codegen/triton.py",
+							"lineno": 1893,
+							"content": "        var = self.args.input(name)",
+							"deleted": false
+						},
+						"writeline": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/utils.py",
+							"lineno": 851,
+							"content": "        if isinstance(line, LineContext):",
+							"deleted": false
+						},
+						"codegen": {
+							"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_inductor/codegen/triton.py",
+							"lineno": 3449,
+							"content": "            for node in node_schedule:",
+							"deleted": false
+						}
+					}
+				}
+			},
+			"torch": {
+				"dispatch trace": {
+					"file": "/code/izanagi/gpex/third_party/pytorch/aten/src/ATen/core/dispatch/Dispatcher.cpp",
+					"lineno": 19,
+					"content": "    static char const* temp = getenv(\"TORCH_SHOW_DISPATCH_TRACE\");",
+					"deleted": false
+				},
+				"decomp softmax": {
+					"file": "/home/zzysonny/micromamba/envs/nvc/lib/python3.10/site-packages/torch/_decomp/decompositions.py",
+					"lineno": 1128,
+					"content": "    return result",
+					"deleted": false
+				}
+			}
+		},
+		"bugmark.searchRadius": 1000
+	}
+}
