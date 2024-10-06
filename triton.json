@@ -1,0 +1,342 @@
+{
+    "bugmark.bookmarks": {
+        "control": {
+            "entry": {
+                "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/python/src/ir.cc",
+                "lineno": 1677,
+                "content": "        if (failed(self.run(mod.getOperation())))",
+                "deleted": false
+            },
+            "python": {
+                "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/python/triton/backends/nvidia/compiler.py",
+                "lineno": 369,
+                "content": "        stages[\"ttir\"] = lambda src, metadata: self.make_ttir(src, metadata, options)",
+                "deleted": false
+            }
+        },
+        "dot": {
+            "fma": {
+                "compute": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/DotOpToLLVM/FMA.cpp",
+                    "lineno": 92,
+                    "content": "            ret[z] = rewriter.create<LLVM::FMulAddOp>(loc, has[{m + mm, k}],",
+                    "deleted": false
+                },
+                "lhs load": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/ConvertLayoutOpToLLVM/SharedToDotOperandFMA.cpp",
+                    "lineno": 147,
+                    "content": "            add(mul(i32_val(m + mm), strideAM), mul(i32_val(k), strideAK));",
+                    "deleted": false
+                },
+                "rhs load": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/ConvertLayoutOpToLLVM/SharedToDotOperandFMA.cpp",
+                    "lineno": 214,
+                    "content": "        Value pb = gep(ptrTy, elemTy, bPtrs[0], offset);",
+                    "deleted": false
+                },
+                "size": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonToTritonGPU/TritonToTritonGPUPass.cpp",
+                    "lineno": 230,
+                    "content": "      retSizePerThread[rank - 1] = 2;",
+                    "deleted": false
+                }
+            },
+            "mma_v1": {
+                "mma_ptx": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/DotOpToLLVM/MMAv1.cpp",
+                    "lineno": 130,
+                    "content": "    mma(resOprs, AOprs, BOprs, COprs);",
+                    "deleted": false
+                }
+            },
+            "mma_v2": {
+                "lds_fallback": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/ConvertLayoutOpToLLVM/SharedToDotOperandMMAv2.cpp",
+                    "lineno": 286,
+                    "content": "        if (needTrans) {",
+                    "deleted": false
+                },
+                "ldsm_offset": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/ConvertLayoutOpToLLVM/SharedToDotOperandMMAv2.cpp",
+                    "lineno": 189,
+                    "content": "      offs[i] = add(mul(contiguousIndexSwizzled, i32_val(contiguousMatShape)),",
+                    "deleted": false
+                },
+                "ldsm_ptx": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/ConvertLayoutOpToLLVM/SharedToDotOperandMMAv2.cpp",
+                    "lineno": 357,
+                    "content": "    ldmatrix(resArgs, addrArg);",
+                    "deleted": false
+                },
+                "mma_ptx": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/DotOpToLLVM/MMAv2.cpp",
+                    "lineno": 356,
+                    "content": "    if (isTuring) {",
+                    "deleted": false
+                }
+            },
+            "mma_v3": {
+                "check": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Analysis/Utility.cpp",
+                    "lineno": 493,
+                    "content": "    if (k < 256 / aElemTy.getIntOrFloatBitWidth())",
+                    "deleted": false
+                },
+                "desc": {
+                    "addr": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/DotOpToLLVM/WGMMA.cpp",
+                        "lineno": 173,
+                        "content": "    Value loadDesc = add(descriptor, off_);",
+                        "deleted": false
+                    },
+                    "base": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/Utility.cpp",
+                        "lineno": 555,
+                        "content": "  SmallVector<Value> elems(types.size());",
+                        "deleted": false
+                    },
+                    "stride": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/DotOpToLLVM/WGMMA.cpp",
+                        "lineno": 128,
+                        "content": "  desc.strideDimensionBaseOffset = swizzling >> 1;",
+                        "deleted": false
+                    },
+                    "swizzle": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/DotOpToLLVM/WGMMA.cpp",
+                        "lineno": 71,
+                        "content": "  uint32_t swizzlingByteWidth = 0;",
+                        "deleted": false
+                    }
+                },
+                "v3": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/DotOpToLLVM/WGMMA.cpp",
+                    "lineno": 394,
+                    "content": "  DotOpMmaV3SmemLoader aLoader;",
+                    "deleted": false
+                }
+            },
+            "pass": {
+                "accel": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/Transforms/AccelerateMatmul.cpp",
+                    "lineno": 240,
+                    "content": "    int versionMajor = getMMAVersionSafe(computeCapability, dotOp);",
+                    "deleted": false
+                },
+                "alloc_load": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/Transforms/ReduceDataDuplication.cpp",
+                    "lineno": 66,
+                    "content": "      auto tmp = builder.create<triton::gpu::LocalAllocOp>(",
+                    "deleted": false
+                },
+                "tf32": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/Transforms/F32DotTC.cpp",
+                    "lineno": 33,
+                    "content": "    if (!(dotOp.getInputPrecision() == InputPrecision::TF32x3 &&",
+                    "deleted": false
+                }
+            }
+        },
+        "for_dot": {
+            "pipeliner": {
+                "init": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/Transforms/Pipeliner/SoftwarePipeliner.cpp",
+                    "lineno": 74,
+                    "content": "  if (!preCondition(forOp))",
+                    "deleted": false
+                }
+            },
+            "prefetch": {
+                "init": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/Transforms/Prefetch.cpp",
+                    "lineno": 172,
+                    "content": "  if (dotsInFor.empty())",
+                    "deleted": false
+                }
+            }
+        },
+        "layout": {
+            "apply": {
+                "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/Utility.cpp",
+                "lineno": 163,
+                "content": "  SmallVector<std::pair<StringAttr, int32_t>> constantIns;",
+                "deleted": false
+            },
+            "cases": {
+                "blocked": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/IR/LinearLayoutConversions.cpp",
+                    "lineno": 283,
+                    "content": "  LinearLayout ctaLayout(",
+                    "deleted": false
+                },
+                "nv_mma_v2": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/IR/LinearLayoutConversions.cpp",
+                    "lineno": 283,
+                    "content": "  LinearLayout ctaLayout(",
+                    "deleted": false
+                },
+                "shared swizzle": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/IR/LinearLayoutConversions.cpp",
+                    "lineno": 438,
+                    "content": "  std::vector<std::vector<int>> bases2D;",
+                    "deleted": false
+                }
+            },
+            "convert": {
+                "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/IR/LinearLayoutConversions.cpp",
+                "lineno": 772,
+                "content": "  //     that removes the relevant out-dim.",
+                "deleted": false
+            }
+        },
+        "memory": {
+            "convert": {
+                "entry1": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/ConvertLayoutOpToLLVM.cpp",
+                    "lineno": 308,
+                    "content": "    if (cvtReordersRegisters(srcTy, dstTy)) { // Case 1.",
+                    "deleted": false
+                },
+                "entry2": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/ConvertLayoutOpToLLVM.cpp",
+                    "lineno": 48,
+                    "content": "      return lowerDistributedToDistributed(op, adaptor, rewriter, targetInfo);",
+                    "deleted": false
+                },
+                "entry3": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/ConvertLayoutOpToLLVM.cpp",
+                    "lineno": 252,
+                    "content": "    if (!dstDotEncoding)",
+                    "deleted": false
+                },
+                "linear": {
+                    "addr": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/ConvertLayoutOpToLLVM.cpp",
+                        "lineno": 580,
+                        "content": "        offset = add(shl(lshr(offset, i32_val(rshiftVal)), i32_val(lshiftVal)),",
+                        "deleted": false
+                    },
+                    "scratch": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Analysis/Allocation.cpp",
+                        "lineno": 126,
+                        "content": "  unsigned innerDim = rank - 1;",
+                        "deleted": false
+                    }
+                },
+                "stmatrix": {
+                    "can_use": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/IR/LinearLayoutConversions.cpp",
+                        "lineno": 931,
+                        "content": "  if (!mmaLayout || !mmaLayout.isHopper())",
+                        "deleted": false
+                    },
+                    "scratch": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/ConvertLayoutOpToLLVM.cpp",
+                        "lineno": 505,
+                        "content": "        chooseStMatrixLayout(ctx, op.getSrc().getType(), scratchConfig.repShape,",
+                        "deleted": false
+                    }
+                }
+            },
+            "global": {
+                "coalesce": {
+                    "axis": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/Transforms/Coalesce.cpp",
+                        "lineno": 159,
+                        "content": "    ModuleAxisInfoAnalysis axisInfoAnalysis(moduleOp);",
+                        "deleted": false
+                    },
+                    "op": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/Transforms/Coalesce.cpp",
+                        "lineno": 190,
+                        "content": "      coalesceOp(kv.second, kv.first);",
+                        "deleted": false
+                    },
+                    "ptr": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/Transforms/Coalesce.cpp",
+                        "lineno": 178,
+                        "content": "      setCoalescedEncoding(axisInfoAnalysis, curr, numWarps, threadsPerWarp,",
+                        "deleted": false
+                    },
+                    "thread": {
+                        "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/Transforms/Coalesce.cpp",
+                        "lineno": 39,
+                        "content": "    auto contiguity = axisInfoAnalysis.getAxisInfo(ptr)->getContiguity();",
+                        "deleted": false
+                    }
+                },
+                "tma_load": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Dialect/TritonGPU/Transforms/Pipeliner/MatmulLoopPipeline.cpp",
+                    "lineno": 191,
+                    "content": "  if (isMMV3Load) {",
+                    "deleted": false
+                }
+            },
+            "local_alloc": {
+                "entry": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/MemoryOpToLLVM.cpp",
+                    "lineno": 77,
+                    "content": "      lowerDistributedToShared(loc, op.getSrc(), op.getResult(),",
+                    "deleted": false
+                },
+                "layout": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Conversion/TritonGPUToLLVM/Utility.cpp",
+                    "lineno": 282,
+                    "content": "  std::optional<LinearLayout> regLayout =",
+                    "deleted": false
+                }
+            },
+            "shared": {
+                "allocation": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/lib/Analysis/Allocation.cpp",
+                    "lineno": 193,
+                    "content": "        allocation->addBuffer<BufferT::BufferKind::Explicit>(result, bytes,",
+                    "deleted": false
+                }
+            }
+        },
+        "mlir": {
+            "print": {
+                "file": "/home/zzysonny/Documents/Code/Projects/CUDA/llvm-project/mlir/lib/IR/AsmPrinter.cpp",
+                "lineno": 3950,
+                "content": "void Operation::print(raw_ostream &os, AsmState &state) {",
+                "deleted": false
+            },
+            "print_attr": {
+                "file": "/home/zzysonny/Documents/Code/Projects/CUDA/llvm-project/mlir/lib/IR/AsmPrinter.cpp",
+                "lineno": 2294,
+                "content": "    printEscapedString(strAttr.getValue());",
+                "deleted": false
+            },
+            "print_op": {
+                "file": "/home/zzysonny/Documents/Code/Projects/CUDA/llvm-project/mlir/lib/IR/AsmPrinter.cpp",
+                "lineno": 3546,
+                "content": "  if (printOpName)",
+                "deleted": false
+            },
+            "print_tensor": {
+                "file": "/home/zzysonny/Documents/Code/Projects/CUDA/llvm-project/mlir/lib/IR/AsmPrinter.cpp",
+                "lineno": 2631,
+                "content": "        printDimensionList(tensorTy.getShape());",
+                "deleted": false
+            }
+        },
+        "tablegen": {
+            "encoding": {
+                "shared": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/include/triton/Dialect/TritonGPU/IR/TritonGPUAttrDefs.td",
+                    "lineno": 158,
+                    "content": "An encoding for tensors whose elements may be simultaneously accessed by",
+                    "deleted": false
+                }
+            },
+            "passes": {
+                "gpu": {
+                    "file": "/home/zzysonny/Documents/Code/Projects/CUDA/triton/include/triton/Dialect/TritonGPU/Transforms/Passes.td",
+                    "lineno": 37,
+                    "content": "def TritonGPUPrefetch : Pass<\"tritongpu-prefetch\", \"mlir::ModuleOp\"> {",
+                    "deleted": false
+                }
+            }
+        }
+    }
+}
